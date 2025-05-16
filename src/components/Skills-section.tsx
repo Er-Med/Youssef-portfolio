@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react"
 import { motion, useAnimation, useInView } from "framer-motion"
+import Container from "./Container"
 
 interface SkillProps {
  name: string
@@ -81,7 +82,7 @@ export default function SkillsSection() {
 
  return (
   <section ref={ref} className=" py-20" id="skills">
-   <div className="container mx-auto px-4">
+   <Container>
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
      {/* Left column - Text content */}
      <motion.div
@@ -141,7 +142,7 @@ export default function SkillsSection() {
       </motion.div>
      </div>
     </div>
-   </div>
+   </Container>
   </section>
  )
 }
