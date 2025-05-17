@@ -75,9 +75,9 @@
 
 //     <div className="flex items-center gap-2">
 //      <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-//       <span className="font-bold text-white">T</span>
+//       <span className="bold text-white">T</span>
 //      </div>
-//      <span className="text-xl font-semibold">Youssef</span>
+//      <span className="text-xl semibold">Youssef</span>
 //     </div>
 //     <div className="flex items-center">
 //      {navItems.map((item, index) => (
@@ -86,7 +86,7 @@
 //        onClick={() => scrollToSection(item.id)}
 //        className={`
 //               ${index < navItems.length - 1 ? 'mr-8' : ''}
-//               font-medium transition-colors cursor-pointer
+//               medium transition-colors cursor-pointer
 //               ${activeSection === item.id
 //          ? 'text-green-500'
 //          : 'text-white hover:text-green-500'
@@ -186,9 +186,9 @@ export default function Navbar() {
      transition={{ duration: 0.3 }}
     >
      <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-      <span className="font-bold text-white">T</span>
+      <span className="bold text-white">T</span>
      </div>
-     <span className="text-xl font-semibold">Youssef</span>
+     <span className="text-xl semibold">Youssef</span>
     </motion.div>
 
     {/* Desktop Navigation */}
@@ -198,7 +198,7 @@ export default function Navbar() {
        key={item.id}
        onClick={() => scrollToSection(item.id)}
        className={cn(
-        "font-medium transition-colors cursor-pointer",
+        "medium transition-colors cursor-pointer",
         index < navItems.length - 1 ? "mr-8" : "",
         activeSection === item.id ? "text-green-500" : "text-white hover:text-green-500",
        )}
@@ -231,7 +231,7 @@ export default function Navbar() {
            key={item.id}
            onClick={() => scrollToSection(item.id)}
            className={cn(
-            "font-medium text-left text-lg py-2 transition-colors cursor-pointer",
+            "medium text-left text-lg py-2 transition-colors cursor-pointer",
             activeSection === item.id ? "text-green-500" : "text-white hover:text-green-500",
            )}
            whileHover={{ x: 5 }}
